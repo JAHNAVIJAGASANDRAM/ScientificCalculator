@@ -4,55 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Scientific Calculator</title>
-    <link rel="stylesheet" href="styles.css">
-    <style>
-        body {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  background-color: #f0f0f0;
-  font-family: Arial, sans-serif;
-}
-
-.calculator {
-  background-color: #fff;
-  padding: 20px;
-  border-radius: 12px;
-  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
-}
-
-#display {
-  width: 100%;
-  height: 40px;
-  font-size: 20px;
-  margin-bottom: 10px;
-  text-align: right;
-  padding: 5px;
-  border: 1px solid #ccc;
-  border-radius: 6px;
-}
-
-.buttons {
-  display: grid;
-  grid-template-columns: repeat(4, 60px);
-  grid-gap: 10px;
-}
-
-button {
-  padding: 15px;
-  font-size: 18px;
-  border: none;
-  border-radius: 6px;
-  background-color: #e0e0e0;
-  cursor: pointer;
-  transition: background-color 0.2s ease;
-}
-
-button:hover {
-  background-color: #d5d5d5;
-}
-</style>
+    <link rel="stylesheet" href="style.css">
+    
 </head>
 <body>
     
@@ -60,6 +13,7 @@ button:hover {
     <input type="text" id="display" readonly>
     <div class="buttons">
       <button onclick="clearDisplay()">C</button>
+     
       <button onclick="appendValue('7')">7</button>
       <button onclick="appendValue('8')">8</button>
       <button onclick="appendValue('9')">9</button>
@@ -75,21 +29,20 @@ button:hover {
       <button onclick="appendValue('3')">3</button>
       <button onclick="appendValue('-')">-</button>
 
-      <button onclick="appendValue('0')">0</button>
+     
+       
       <button onclick="appendValue('.')">.</button>
+      <button onclick="appendValue('0')">0</button>
       <button onclick="calculate()">=</button>
       <button onclick="appendValue('+')">+</button>
-      <button onclick="appendValue('^')">^</button>
+      
       <button onclick="appendValue('%')">%</button>
+      <button onclick="backspace()"><-</button>
     </div>
   </div>
   <script src="script.js"></script>
-    <button onclick="alert('Calculator functionality coming soon!')"></button>
     
-    <script>
-        // Placeholder for future calculator functionality
-        console.log("Calculator is ready to be implemented.");
-    </script>
+  
     
     
     
